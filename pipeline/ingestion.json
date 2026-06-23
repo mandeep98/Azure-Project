@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Lookup",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -19,7 +19,7 @@
 						"type": "JsonSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"fileListPath": "raw/cdc.json",
+							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -27,7 +27,7 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "Json",
+						"referenceName": "Json2",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
