@@ -1,0 +1,20 @@
+{
+	"name": "Jsonapi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Pokemon",
+				"folderPath": "RestApi",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {}
+	}
+}
