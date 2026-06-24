@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "last_cdc updated",
+				"name": "last_cdc",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -38,7 +38,7 @@
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "last_cdc updated",
+						"activity": "last_cdc",
 						"dependencyConditions": [
 							"Succeeded"
 						]
